@@ -1,3 +1,5 @@
+# compare run times between vectorized and non-vectorized methods
+
 import numpy as np
 import time
 
