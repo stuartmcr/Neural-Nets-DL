@@ -1,6 +1,6 @@
 import numpy as np
 
-# signmoid gradient
+# sigmoid gradient
 
 
 def sigmoid_derivative(x):
