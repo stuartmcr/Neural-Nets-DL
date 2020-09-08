@@ -1,13 +1,14 @@
-import math
 import numpy as np
 
-
-def basic_sigmoid(x):
-    s = 1 / (1 + math.exp(-x))
-    return s
+# signmoid gradient
 
 
-print(basic_sigmoid(3))
+def sigmoid_derivative(x):
 
-y = np.array([1, 2, 3])
-print(np.exp(y))
+    s = 1 / (1 + np.exp(-x))
+    ds = s * (1 - s)
+    return ds
+
+
+x = np.array([1, 2, 3])
+print("sigmoid_derivative(x) = " + str(sigmoid_derivative(x)))
