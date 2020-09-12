@@ -118,7 +118,7 @@ toc = time.process_time()
 print(
     "gdot = "
     + str(gdot)
-    + "\n ----- Computation time (gen dot loop)= "
+    + "\n ----- Computation time (general dot loop)= "
     + str(1000 * (toc - tic))
     + "ms"
 )
@@ -131,7 +131,7 @@ toc = time.process_time()
 print(
     "gdot = "
     + str(dot)
-    + "\n ----- Computation time (gen dot numpy) = "
+    + "\n ----- Computation time (general dot numpy) = "
     + str(1000 * (toc - tic))
     + "ms"
 )
