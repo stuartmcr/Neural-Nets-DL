@@ -51,7 +51,7 @@ train_set_x = train_set_x_flatten / 255
 test_set_x = test_set_x_flatten / 255
 
 
-# General Architecture of the Learning Algorithm / Building Pieces
+# 3.) General Architecture of the Learning Algorithm / Building Pieces
 
 #helper function
 def sigmoid(z):
@@ -138,7 +138,8 @@ X = np.array([[1., -1.1, -3.2], [1.2, 2., 0.1]])
 print("preductions = " +str(predict(w, b, X)))
 
 
-# Merge all functions
+# 4.) Merge all functions
+
 def model(X_train, Y_train, X_test, Y_test, num_iterations = 2000, learning_rate = 0.5, print_cost = False):
     #initialize parameters with zeros
     w, b = initialize_with_zeros(X_train.shape[0])
@@ -175,7 +176,7 @@ plt.title("Learning rate =" + str(d["learning_rate"]))
 plt.show()
 
 
-#choice of learning rate
+# 5.) Choice of learning rate
 learning_rates = [0.01, 0.001, 0.0001]
 models = {}
 for i in learning_rates:
